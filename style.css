@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 body {
   background-image: linear-gradient(to top,rgb(223, 218, 218) 65%,rgba(255, 255, 255, 0) 80%),
@@ -24,29 +25,73 @@ body {
   border: 2px solid black;
   margin: 2px;
 }
-.Search {
-  display: flex;
-  height: 30px;
-  gap: 0px;
-}
 .navset {
   display: flex;
   gap: 270px;
   align-items: center;
   justify-content: center;
 }
-.Deliver {
-  color: white;
+.Search {
+  display: flex;
+  height: 35px;
+  gap: 0px;
 }
+
 input {
   width: 300px;
+  height: 29px;
+  border: 2px solid rgba(235, 153, 11, 0.916);
+  border-radius: 3px;
+  border-right: 2px solid white;
+  margin-left: -2px;
 }
 .butt {
   background-color: rgba(235, 153, 11, 0.916);
   color: white;
-  position: relative;
-  right: 3px;
-  height: 31px;
+  border: 2px solid white;
+  border-radius: 3px ;
+  height: 29px;
+  width: 77px;
+  padding-left: 4px;
+  margin-left: -2px;
+
+}
+.butt:hover{
+  background-color: white;
+  color:rgba(235, 153, 11, 0.916) ;
+  border-color: rgba(235, 153, 11, 0.916);
+
+}
+
+
+.db{
+   background-color: white;
+    color: rgba(235, 153, 11, 0.916);
+    height: 29px;
+    align-content: center;
+    width: 77px;
+    padding-left: 4px;
+    border: 2px solid;
+    border-radius: 3px;
+}
+.di{
+      background-color: rgba(235, 153, 11, 0.916);
+    color: white;
+    display: none;
+    padding: 4px;
+    border-radius: 3px;
+}
+.s-links{
+  border-bottom: 2px solid white;
+   display: block;
+}
+
+.dd:hover .di{
+    display: block;
+}
+
+.Deliver {
+  color: white;
 }
 .on {
   background-color: white;
@@ -57,11 +102,6 @@ input {
   line-height: 12px;
   font-weight: bold;
 }
-.select {
-  position: relative;
-  right: -2px;
-}
-
 .boxes {
   display: grid;
   grid-template-columns: repeat(4, 250px);
